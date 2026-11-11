@@ -1,18 +1,38 @@
-# Titanic_training
+# Titanic Survival Prediction
 
-This project uses a local virtual environment in `titanic/`.
+This project analyzes the Titanic dataset and compares several machine learning models to predict passenger survival.
 
-Install the full ML stack for the notebook with:
+## Project structure
+- `Notebook/titanic.ipynb` — exploratory analysis and model training notebook
+- `Rawdata/titanic_training_data_titanic_training_data.csv` — Titanic training dataset
+- `requirements.txt` — Python dependencies for the notebook environment
+- `titanic/` — local virtual environment used for the project
+
+## Setup
+Use the repository's local virtual environment to install dependencies:
 
 ```bash
 ./titanic/Scripts/python.exe -m pip install -r requirements.txt
 ```
 
-Required packages include:
+If you are working from a different Python environment, you can also run:
+
+```bash
+pip install -r requirements.txt
+```
+
+## Dependencies
+The project uses:
 - pandas
+- numpy
 - matplotlib
 - seaborn
 - scikit-learn
 - xgboost
 
-The Titanic notebook reads the CSV from `Rawdata/titanic_training_data_titanic_training_data.csv` and builds survival-prediction models with scikit-learn and XGBoost.
+## Workflow
+Open and run the notebook in `Notebook/titanic.ipynb` to:
+- load the dataset
+- clean and inspect the data
+- train survival-prediction models
+- compare model performance
